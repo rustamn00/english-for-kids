@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>english-for-kids</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="nav-container">
+            <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+            <aside class="nav-sidebar">
+                <ul>
+                    <li><a href="/index.html">Menu Page</a></li>
+                    <li><a href="/trainCards.html" onclick="swapImages()">Action (set A)</a></li>
+                    <li><a href="#">Action (set B)</a></li>
+                    <li><a href="#">Action (set C)</a></li>
+                    <li><a href="#">Adjective</a></li>
+                    <li><a href="#">Animal (set A)</a></li>
+                    <li><a href="#">Animal (set B)</a></li>
+                    <li><a href="#">Clothes</a></li>
+                    <li><a href="#">Emotion</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div class="toggle-switch">
+            <span class="switch-text">Train</span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <span class="switch-text">Play</span>    
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <a  href="/trainCards.html" class="card">
+            <div class="card-up"></div>
+            <img src="/img/dance.jpg" alt="Action (set A)" class="avatar" onclick="swapImages()"></img>
+            <div class="card-body">Action (set A)</div>
+        </a>
+
+        <a  href="#" class="card">
+            <div class="card-up"></div>
+            <img src="/img/swim.jpg" alt="Action (set B)" class="avatar"></img>
+            <div class="card-body">Action (set B)</div>
+        </a>
+
+        <a  href="#" class="card">
+            <div class="card-up"></div>
+            <img src="/img/drop.jpg" alt="Action (set C)" class="avatar"></img>
+            <div class="card-body">Action (set C)</div>
+        </a>
+
+        <a  href="#" class="card">
+            <div class="card-up"></div>
+            <img src="/img/friendly.jpg" alt="Adjective" class="avatar"></img>
+            <div class="card-body">Adjective</div>
+        </a>
+
+        <a  href="#" class="card">
+            <div class="card-up"></div>
+            <img src="/img/cat.jpg" alt="Animal (set A)" class="avatar"></img>
+            <div class="card-body">Animal (set A)</div>
+        </a>
+        
+        <a  href="#" class="card">
+            <div class="card-up"></div>
+            <img src="/img/bird.jpg" alt="Animal (set B)" class="avatar"></img>
+            <div class="card-body">Animal (set B)</div>
+        </a>
+        
+        <a  href="#" class="card">
+            <div class="card-up"></div>
+            <img src="/img/blouse.jpg" alt="Clothes" class="avatar"></img>
+            <div class="card-body">Clothes</div>
+        </a>
+
+        <a  href="#" class="card">
+            <div class="card-up"></div>
+            <img src="/img/smile.jpg" alt="Emotion" class="avatar"></img>
+            <div class="card-body">Emotion</div>
+        </a>
+    </div>
+    
+
+    <script src="app.js"></script>
+    <script src="cards.js"></script>
+    
+
+</body>
+</html>

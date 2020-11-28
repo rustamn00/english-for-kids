@@ -1,0 +1,196 @@
+.btn-toggle-nav {
+  width: 60px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  background-image: url("/img/menu.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  cursor: pointer;
+}
+
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  margin: auto 0;
+  width: 100%;
+  max-width: 1350px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.btn-toggle-nav:hover {
+  opacity: 0.6;
+}
+
+.nav-sidebar {
+  display: block;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: calc(100vh-75px);
+  padding: 0 5px;
+  background-color: #1b1b1b;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  margin: 0;
+}
+
+.nav-sidebar ul {
+  padding-left: 0px;
+  padding-top: 15px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.nav-sidebar ul li {
+  line-height: 60px;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-sidebar ul li a {
+  display: block;
+  height: 60px;
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Arial;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-sidebar ul li a:hover {
+  background-color: #222;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 34px;
+  top: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*aaa*/
+
+.toggle-switch {
+  display: flex;
+}
+
+.switch-text {
+  position: relative;
+  display: block;
+  top: 25px;
+  font-family: Arial;
+  font-size: 32px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  font-family: Arial;
+  font-size: 18px;
+  flex-wrap: wrap;
+  padding: 20px 15px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.card {
+  width: 300px;
+  height: 280px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #212529;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(180deg, #fd6a63, #feb46b 40%, #fff 0, #fff);
+  margin: 20px 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-body {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  object-fit: cover;
+  margin: 30px auto;
+}

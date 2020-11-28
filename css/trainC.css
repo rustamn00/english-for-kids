@@ -1,0 +1,46 @@
+.main-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 15px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.card {
+  position: block;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  width: 300px;
+  height: 237px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px 25px;
+  cursor: default;
+}
+
+.photo-card {
+  height: 200px;
+}
+
+.switch-card {
+  width: 45px;
+  height: auto;
+  background-image: url(/img/rotate.png);
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.foot-card {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+}
+
+.text-card {
+  display: flex;
+  top: 5px;
+}
